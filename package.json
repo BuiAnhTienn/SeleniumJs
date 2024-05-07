@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^10.4.0",
+    "selenium-webdriver": "^4.20.0"
+  },
+  "name": "seleniumwebdriver",
+  "version": "1.0.0",
+  "description": "no description",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --no-timeouts --parallel"
+  },
+  "author": "",
+  "license": "ISC"
+}
