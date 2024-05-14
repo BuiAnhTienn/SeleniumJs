@@ -30,7 +30,7 @@ describe("Test 2", () => {
     const buttonLogin = await driver.findElement(
       By.xpath('//*[@id="normal_login"]/div[5]/div/div/div/div/button')
     );
-    if (await buttonLogin.isDisplayed()) {
+    if (await buttonLogin.isDisplayed() == true) {
       await buttonLogin.click();
       console.log("Nhấp vào nút Đăng nhập thành công.");
     } else {
@@ -40,20 +40,20 @@ describe("Test 2", () => {
   });
 
   // Ở ĐÂY SÀI DÁCH VIẾT CŨ
-  it("login pass 2", async () => {
-    const buttonLogin = await driver.findElement(
-      By.xpath('//*[@id="normal_login"]/div[5]/div/div/div/div/button')
-    ).isDisplayed;
-    if ((await buttonLogin) == true) {
-      await driver
-        .findElement(
-          By.xpath('//*[@id="normal_login"]/div[5]/div/div/div/div/button')
-        )
-        .click();
-      console.log("Nhấp vào nút Đăng nhập thành công.");
-    } else {
-      console.log("Nút Login không nhấn được nèeee!");
-    }
-    await driver.sleep(5000);
-  });
+  // it("login pass 2", async () => {
+  //   const buttonLogin = await driver.findElement(
+  //     By.xpath('//*[@id="normal_login"]/div[5]/div/div/div/div/button')
+  //   ).isDisplayed();
+  //   if (await buttonLogin == true) {
+  //     await driver
+  //       .findElement(
+  //         By.xpath('//*[@id="normal_login"]/div[5]/div/div/div/div/button')
+  //       )
+  //       .click();
+  //     console.log("Nhấp vào nút Đăng nhập thành công.");
+  //   } else {
+  //     console.log("Nút Login không nhấn được nèeee!");
+  //   }
+  //   await driver.sleep(5000);
+  // });
 });
