@@ -51,7 +51,7 @@ describe("Checkbox Test", function () {
       }
       await driver.sleep(5000)
       let buttonAll = await driver.findElement(By.xpath('//*[@id="check1"]'));
-      // dùng get Attribute 
+      // dùng get Attribute để lấy thuộc tính value khi nó nằm trong cục button
       if (await buttonAll.getAttribute('value') == "Check All") {
         await buttonAll.click();
         console.log("Đã đúng");
@@ -68,7 +68,7 @@ describe("Checkbox Test", function () {
       }else{
         console.log(' chưa click')
       }
-
+      // dùng get Attribute để lấy thuộc tính value khi nó nằm trong cục button.......
       let uncheckAll = await driver.findElement(By.xpath('//*[@id="check1"]'))
       if (await uncheckAll.getAttribute('value') == 'Uncheck All') {
         console.log(' đã click hết và thay đổi thành Uncheck All')
