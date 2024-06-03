@@ -91,6 +91,7 @@ describe("Bộ 1", () => {
       } else {
         console.log("Chưa mở phiếu thu");
       }
+      // Chỗ này nên bỏ thêm sleep vào nhiều lúc nó không chạy kịp nó kh load ra đc text
       await driver.sleep(3000);
       let textTh = await driver.findElements(By.css("th"));
       for (let i = 0; i < textTh.length; i++) {
@@ -98,6 +99,7 @@ describe("Bộ 1", () => {
         let text = await element.getText();
         console.log(text);
       }
+      //----------------------
       await driver.sleep(3000);
       let checkbox = await driver.findElement(
         By.xpath('//*[@id="add_to_revenue"]')

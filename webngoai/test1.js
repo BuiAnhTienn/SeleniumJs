@@ -47,6 +47,7 @@ describe("Checkbox Test", function () {
       await driver.executeScript("window.scrollBy(0, 200);");
 
     let checkboxList = await driver.findElements(By.className('cb1-element'))
+    // lấy số phần tử , nhớ sài findElements để lấy mảng nhiều phần tử , kh 's' lấy 1 ptu
     let size = checkboxList.length;
     console.log('số lượng phần tư :',size)
     for (let i = 0; i < checkboxList.length; i++) {
@@ -103,3 +104,5 @@ describe("Checkbox Test", function () {
     }
   });
 });
+
+

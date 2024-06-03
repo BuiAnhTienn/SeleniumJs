@@ -28,10 +28,10 @@ describe("Bộ 1", () => {
       }
       console.log(textRadio);
       let radioMale = await driver.findElements(
-        By.xpath('//input[@name = "optradio"]')
+        By.xpath('//input[@name = "optradio"]') // cáo xpath chỉ có 2 thằng có nên nó lấy 2 thằng.
       );
       console.log("Số radio :", radioMale.length);
-      //----------------------- đi sâu vào cái input @name của cái name chung sau đó dùng getAtribute để lấy cái value có tên khácc nhau ra
+      //----------------------- đi sâu vào cái input @name của cái name chung sau đó dùng getAtribute để lấy cái value có tên khácc nhau ra Lưu ý : Cứ có cái chung là được
 
       let listradio = await driver.findElements(
         By.xpath('//input[@name="optradio"]')

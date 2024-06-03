@@ -36,7 +36,7 @@ describe("Bộ 1", () => {
      console.log('Text của radio 1:' ,text1);
      let text = await driver.findElement(By.xpath('//*[@id="easycont"]/div/div[2]/div[1]/div[2]/label[2]')).getText();
      console.log('Text của radio 2:' ,text);
-
+//-------------------------------------------
     } catch (error) {
       console.error('Lỗi ở khối it ',error)
     }

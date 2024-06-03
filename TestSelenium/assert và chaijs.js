@@ -31,8 +31,8 @@ describe("add test ne",  () => {
         });
 // sài should của chaijs
 
-    //   todoText.should.equal('Tên sản ')
-      todoText.should.equal(todoText,'Tên sản phẩm')
+      todoText.should.equal('Tên sản phẩm')
+
 // sài assert
 // nhớ cách import thư viện
     //  assert.strictEqual(todoText, 'Tên sản phẩm');

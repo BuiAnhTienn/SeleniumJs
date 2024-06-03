@@ -40,7 +40,7 @@ describe("Bộ 1", () => {
       await driver.sleep(2000)
       await driver.findElement(By.linkText('Sổ quỹ')).click()
       await driver.sleep(2000)
-      //lấy số phần tử ra
+      //lấy số phần tử
       let thElements = await driver.findElements(By.css('th'));
       console.log(`Tổng số phần tử th: ${thElements.length}`);
       

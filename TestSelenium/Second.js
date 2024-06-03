@@ -60,25 +60,25 @@ describe("Test 2", () => {
         await driver.sleep(5000)
       await driver.findElement(By.linkText("Sổ quỹ")).click();
 
-      // await driver
-      //   .findElement(
-      //     By.xpath(
-      //       '//*[@id="root"]/div/div/div[2]/div/div/div/div/div/div[1]/div[2]/div/button[1]'
-      //     )
-      //   )
-      //   .click();
-      // await driver.wait(
-      //   elementLocated(By.xpath('//*[@id="add_to_revenue"]')),
-      //   3000
-      // );
-      // let CheckboxCashbook = await driver
-      //   .findElement(By.xpath('//*[@id="add_to_revenue"]'))
-      //   .isSelected();
-      // if (CheckboxCashbook == true) {
-      //   console.log("Đã click");
-      // } else {
-      //   console.log("Chưa click");
-      // }
+      await driver
+        .findElement(
+          By.xpath(
+            '//*[@id="root"]/div/div/div[2]/div/div/div/div/div/div[1]/div[2]/div/button[1]'
+          )
+        )
+        .click();
+      await driver.wait(
+        elementLocated(By.xpath('//*[@id="add_to_revenue"]')),
+        3000
+      );
+      let CheckboxCashbook = await driver
+        .findElement(By.xpath('//*[@id="add_to_revenue"]'))
+        .isSelected();
+      if (CheckboxCashbook == true) {
+        console.log("Đã click");
+      } else {
+        console.log("Chưa click");
+      }
     } finally {
       await driver.quit();
     }
